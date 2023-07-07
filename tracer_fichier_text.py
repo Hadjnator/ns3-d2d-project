@@ -11,6 +11,7 @@ df = pd.read_csv('DlDataSinr.txt', delimiter='\t')
 time = df["Time"].tolist()  
 SINR = df["SINR(dB)"].tolist()  
 
+#next step: calculer le SINR moyen pour chaque simulation et nouvelle distance
 
 # Tracer la courbe 
 plt.plot(time, SINR)
